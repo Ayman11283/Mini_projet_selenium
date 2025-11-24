@@ -1,8 +1,8 @@
-package main.java.utils;
+package utils;
 
 import org.openqa.selenium.WebDriver;
-import main.java.pages.ProductPage;
-import main.java.pages.DescriptionProductPage;
+import pages.ProductPage;
+import pages.DescriptionProductPage;
 
 public class CommonKeywords {
     private WebDriver driver;

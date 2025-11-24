@@ -1,11 +1,11 @@
-package test.java.tests;
+package tests;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import main.java.pages.CartPage;
-import main.java.pages.DescriptionProductPage;
-import test.java.utils.BaseTest;
-import main.java.utils.CommonKeywords;
+import pages.CartPage;
+import pages.DescriptionProductPage;
+import utils.BaseTest;
+import utils.CommonKeywords;
 
 public class MultipleProductsTest extends BaseTest {
 

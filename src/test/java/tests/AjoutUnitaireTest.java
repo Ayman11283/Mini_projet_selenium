@@ -1,11 +1,11 @@
-package test.java.tests;
+package tests;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import main.java.pages.CartPage;
-import main.java.pages.DescriptionProductPage;
-import main.java.pages.ProductPage;
-import test.java.utils.BaseTest;
+import pages.CartPage;
+import pages.DescriptionProductPage;
+import pages.ProductPage;
+import utils.BaseTest;
 
 public class AjoutUnitaireTest extends BaseTest {
 

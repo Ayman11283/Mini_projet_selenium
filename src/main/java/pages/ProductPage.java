@@ -1,4 +1,4 @@
-package main.java.pages;
+package pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -80,9 +80,26 @@ public class ProductPage {
                 throw new IllegalArgumentException("Catégorie invalide: " + category);
         }
         
-        WebElement categoryElement = wait.until(ExpectedConditions.visibilityOfElementLocated(categoryLocator));
-        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", categoryElement);
-        categoryElement.click();
+        // Attendre que le loader disparaisse si présent
+        try {
+            wait.until(ExpectedConditions.invisibilityOfElementLocated(loader));
+        } catch (Exception e) {
+            // Le loader n'est peut-être pas présent
+        }
+        
+        // Attendre que l'élément soit cliquable
+        WebElement categoryElement = wait.until(ExpectedConditions.elementToBeClickable(categoryLocator));
+        
+        // Scroller jusqu'à l'élément et attendre un peu
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView({behavior: 'smooth', block: 'center'});", categoryElement);
+        sleep(500);
+        
+        // Essayer de cliquer normalement, sinon utiliser JavaScript
+        try {
+            categoryElement.click();
+        } catch (Exception e) {
+            ((JavascriptExecutor) driver).executeScript("arguments[0].click();", categoryElement);
+        }
         sleep(2000);
     }
 
