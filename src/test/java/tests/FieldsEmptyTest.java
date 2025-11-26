@@ -6,6 +6,7 @@ import pages.HomePage;
 import pages.CreateAccountPage;
 import utils.BaseTest;
 
+/*Vérification des champs vides dans la page de création de compte */
 public class FieldsEmptyTest extends BaseTest {
 
     @Test

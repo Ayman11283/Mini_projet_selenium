@@ -6,6 +6,7 @@ import pages.HomePage;
 import pages.CreateAccountPage;
 import utils.BaseTest;
 
+/*Vérification du masquage des mots de passe dans la page de création de compte */
 public class PasswordMaskedTest extends BaseTest {
 
     @Test

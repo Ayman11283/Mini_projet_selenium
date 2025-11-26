@@ -6,6 +6,7 @@ import pages.HomePage;
 import pages.CreateAccountPage;
 import utils.BaseTest;
 
+/*Vérification des mots de passe non concordants lors de la création de compte */
 public class PasswordMismatchTest extends BaseTest {
 
     @Test

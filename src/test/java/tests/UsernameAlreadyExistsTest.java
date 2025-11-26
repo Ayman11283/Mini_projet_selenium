@@ -6,6 +6,7 @@ import pages.HomePage;
 import pages.CreateAccountPage;
 import utils.BaseTest;
 
+/*Vérification du username déjà existant lors de la création de compte */
 public class UsernameAlreadyExistsTest extends BaseTest {
 
     @Test

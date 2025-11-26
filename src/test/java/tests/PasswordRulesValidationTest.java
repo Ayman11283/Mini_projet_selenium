@@ -6,6 +6,7 @@ import pages.HomePage;
 import pages.CreateAccountPage;
 import utils.BaseTest;
 
+/*Vérification des règles de validation des mots de passe lors de la création de compte */
 public class PasswordRulesValidationTest extends BaseTest {
 
     @Test
