@@ -6,6 +6,7 @@ import pages.HomePage;
 import pages.CreateAccountPage;
 import utils.BaseTest;
 
+/*Vérification du username trop court lors de la création de compte */
 public class UsernameShortTest extends BaseTest {
 
     @Test

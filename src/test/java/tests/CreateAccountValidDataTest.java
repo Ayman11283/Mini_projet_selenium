@@ -6,6 +6,7 @@ import pages.HomePage;
 import pages.CreateAccountPage;
 import utils.BaseTest;
 
+/*Creation du compte avec data valid  */
 public class CreateAccountValidDataTest extends BaseTest {
 
     @Test

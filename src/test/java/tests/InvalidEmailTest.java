@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 import pages.HomePage;
 import pages.CreateAccountPage;
 import utils.BaseTest;
-
+/*Vérification de l'email invalide lors de la création de compte */
 public class InvalidEmailTest extends BaseTest {
 
     @Test
