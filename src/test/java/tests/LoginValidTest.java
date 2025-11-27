@@ -19,8 +19,8 @@ public class LoginValidTest extends BaseTest {
 
         // Note: Utilisez un compte que vous avez créé manuellement dans l'application
         // ou utilisez les credentials que vous connaissez
-        String username = "ayaBahri";  // Remplacez par un username valide
-        String password = "Passw0rd!";  // Remplacez par le mot de passe correct
+        String username = "ayaBahri";  // Username valide
+        String password = "@123ABc";  // Mot de passe correct
         
         // Remplir les informations de connexion
         loginPage.fillUsername(username);
